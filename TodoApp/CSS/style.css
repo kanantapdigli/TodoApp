@@ -1,0 +1,321 @@
+@font-face {
+    src: url(../Assets/Fonts/NotoSans-Regular.ttf);
+    font-family: "Sans";
+}
+
+body {
+    font-family: "Sans";
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F1F2F5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerShow {
+    width: calc(100% - 260px);
+    display: flex;
+    justify-content: center;
+}
+
+.modal {
+    background-color: #78797A;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modalContent {
+    height: 100%;
+    width: 260px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+
+.contentTop {
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+.google {
+    display: flex;
+    width: 220px;
+    height: 42px;
+    background-color: #2e8ae6;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+.google:hover {
+    background-color: #1a82eb;
+}
+
+.goIcon {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.contentCenter {
+    height: 79%;
+    border-bottom: 1px solid #eee;
+    flex: 1 0 auto;
+    margin-top: 25px;
+}
+
+.listTitle {
+    color: #aaa;
+    font-size: .7rem;
+    height: 25px;
+    margin: 0 20px;
+}
+
+
+.addButton {
+    color: #aaa;
+    font-size: 14px;
+    cursor: pointer;
+    height: 38px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.lists {
+    font-size: 15px;
+    cursor: pointer;
+    height: 38px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remove {
+    display: none;
+    padding-right: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+.lists:hover {
+    background-color: #F1F2F5;
+}
+
+
+.lists:hover .remove {
+    display: block;
+}
+
+.remove:hover {
+    color: #333;
+}
+
+
+.addButton:hover {
+    color: #555;
+}
+
+
+.contentBottom {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+
+.madeBy {
+    font-size: 13px;
+    padding-left: 20px;
+    color: #525b62;
+}
+
+.byName {
+    cursor: pointer;
+    font-size: 13px;
+    padding-left: 5px;
+    color: #525b62;
+}
+
+
+.listContent {
+    display: none;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.active {
+    display: block;
+}
+
+.listContentTop {
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.creatingDiv {
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+
+.topInput {
+    width: 408px;
+    height: 50px;
+    border: none;
+    padding-left: 15px;
+    font-size: 15px;
+    outline: none;
+    color: #545862;
+
+}
+
+.icon {
+    width: 92px;
+    height: 52px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon2 {
+    width: 50px;
+    height: 52px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.iconRight {
+    width: 50px;
+    height: 52px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.iconButton {
+    color: #333;
+    opacity: 0.5;
+    font-size: 13px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.iconButton2 {
+    color: #333;
+    opacity: 0.5;
+    font-size: 10px;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.listContentCenter {
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.centerInput {
+    width: 408px;
+    height: 50px;
+    border: none;
+    padding-left: 15px;
+    font-size: 15px;
+    outline: none;
+    font-style: italic;
+}
+
+.iconButton3 {
+    color: #333;
+    opacity: 0.5;
+    font-size: 13px;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.iconButton4 {
+    color: #333;
+    opacity: 0.5;
+    font-size: 16px;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+
+.iconButton4:hover {
+    opacity: 1;
+}
+
+
+.fa-check {
+    color: #2E8AE6;
+    font-size: 13px;
+}
+
+.creatingInput {
+    width: 408px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.centerInput::placeholder {
+    color: #C6C6C6;
+}
+
+.listContentBottom {
+    height: 50px;
+    width: 100%;
+    background-color: #F1F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.activeList {
+    color: #1870c9;
+    border-right: 3px solid;
+    border-color: #1870c9;
+}
+
+.nonactive {
+    display: none;
+}
+
+.fa-trash-alt {
+    font-size: 17px;
+}
